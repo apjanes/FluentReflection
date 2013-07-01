@@ -6,8 +6,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCompany("Peppermint IT Limited")]
 [assembly: AssemblyProduct("Fluent Reflection")]
 [assembly: AssemblyCopyright("Copyright 2011 by Peppermint IT Limited")]
-[assembly: AssemblyVersion("0.0.0.15")]
+[assembly: AssemblyVersion("0.0.0.16")]
 
-[assembly: AssemblyFileVersion("0.0.0.15")]
+[assembly: AssemblyFileVersion("0.0.0.16")]
 [assembly: InternalsVisibleTo("FluentReflection.Tests")]
-

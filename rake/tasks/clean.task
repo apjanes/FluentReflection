@@ -1,14 +1,14 @@
 task :clean do
-  puts cyan{bold{"\nCleaning binaries:"}}
+  puts "\nCleaning binaries:"
   files = []
   
-  if Dir.exists?($bin_dir)
+  if File.directory?($bin_dir)
     Dir.entries($bin_dir).each do |f|
       files.push(File.join($bin_dir, f)) unless f =~ /^\.{1,2}$/
     end
   end
   
-  if Dir.exists?($base_dir)
+  if File.directory?($base_dir)
     Dir.entries($base_dir).each do |f|
       files.push(File.join($base_dir, f)) if f =~ /\.nupkg$/i
     end
@@ -20,11 +20,11 @@ task :clean do
   add_dirs('db', files)
   
   if files.empty?
-    puts yellow{bold{"  No files to clean."}}
+    puts "  No files to clean."
   else
     files.each do |x|
       FileUtils.rm_rf(x)
-      puts bold{"  Deleting: "} + x
+      puts "  Deleting: " + x
     end
   end
 end
@@ -32,7 +32,7 @@ end
 private
 def add_dirs(dir, dirs)
   dir = File.join($base_dir, dir)
-  return unless Dir.exists?(dir)
+  return unless File.directory?(dir)
   Find.find(dir) do |f|
     if File.directory?(f) and File.basename(f) =~ /^bin|obj$/i
       dirs.push(f)

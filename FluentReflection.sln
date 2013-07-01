@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentReflection", "src\FluentReflection.csproj", "{8E80D6B6-C83B-4A48-ADA0-0BAF1E95FEF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B7400485-6400-45C5-9205-673ACD5301B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CB42C3A8-BDDB-4327-9EA6-27CC5E451450}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentReflection.Tests", "tests\FluentReflection.Tests.csproj", "{4115DF47-CAD3-4F43-B3A1-C5130DBB62D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E80D6B6-C83B-4A48-ADA0-0BAF1E95FEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E80D6B6-C83B-4A48-ADA0-0BAF1E95FEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E80D6B6-C83B-4A48-ADA0-0BAF1E95FEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E80D6B6-C83B-4A48-ADA0-0BAF1E95FEF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4115DF47-CAD3-4F43-B3A1-C5130DBB62D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4115DF47-CAD3-4F43-B3A1-C5130DBB62D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4115DF47-CAD3-4F43-B3A1-C5130DBB62D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4115DF47-CAD3-4F43-B3A1-C5130DBB62D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8E80D6B6-C83B-4A48-ADA0-0BAF1E95FEF5} = {B7400485-6400-45C5-9205-673ACD5301B1}
+		{4115DF47-CAD3-4F43-B3A1-C5130DBB62D0} = {CB42C3A8-BDDB-4327-9EA6-27CC5E451450}
+	EndGlobalSection
+EndGlobal

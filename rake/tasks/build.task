@@ -1,0 +1,32 @@
+# Default build task (rake build)
+msbuild :build, :configuration, :needs => ['build:assemblyinfo'] do |msb, args|
+  conf = args[:configuration] || :Debug
+  msb.properties :configuration=>conf
+  msb.solution = $solution
+end
+
+namespace :build do
+  assemblyinfo :assemblyinfo do |asm|
+    Version.increment_version
+    asm.version = Version.get_version
+    asm.company_name = $asm[:company]
+    asm.product_name = $asm[:product]
+    asm.title = $asm[:title]
+    asm.description = $asm[:description]
+    asm.copyright = $asm[:copyright]
+    asm.output_file = $asm[:output]
+    asm.namespaces = $asm[:namespaces]
+    custom = {}
+    custom[:AssemblyFileVersion] = Version.get_version
+    custom.merge!($asm[:custom_attributes]) if $asm[:custom_attributes]
+    asm.custom_attributes custom
+  end
+  
+  task :debug, :needs => :build do
+    
+  end
+  
+  task :release do |t|
+    Rake::Task[:build].execute({:configuration=>:Release})
+  end
+end

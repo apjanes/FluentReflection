@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8E80D6B6-C83B-4A48-ADA0-0BAF1E95FEF5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FluentReflection</RootNamespace>
+    <AssemblyName>FluentReflection</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConstructorNotFoundException.cs" />
+    <Compile Include="Impl\ConstructorSpec.cs" />
+    <Compile Include="Impl\MethodSpec.cs" />
+    <Compile Include="Impl\PropertySpec.cs" />
+    <Compile Include="Impl\WithParamsSpec.cs" />
+    <Compile Include="MethodNotFoundException.cs" />
+    <Compile Include="PropertyNotFoundException.cs" />
+    <Compile Include="FieldNotFoundException.cs" />
+    <Compile Include="MemberNotFoundException.cs" />
+    <Compile Include="Specs\IConstructorParamSpec.cs" />
+    <Compile Include="Specs\IConstructorResultSpec.cs" />
+    <Compile Include="Specs\IConstructorSpec.cs" />
+    <Compile Include="Specs\IConstructorThatSpec.cs" />
+    <Compile Include="Specs\IFieldResultSpec.cs" />
+    <Compile Include="Specs\IFieldSpec.cs" />
+    <Compile Include="Specs\IFieldThatSpec.cs" />
+    <Compile Include="Impl\FieldSpec.cs" />
+    <Compile Include="Specs\IMethodParamSpec.cs" />
+    <Compile Include="Specs\IMethodResultSpec.cs" />
+    <Compile Include="Specs\IMethodSpec.cs" />
+    <Compile Include="Specs\IMethodThatSpec.cs" />
+    <Compile Include="Specs\INamedSpec.cs" />
+    <Compile Include="Specs\IParamSpec.cs" />
+    <Compile Include="Specs\IPropertyResultSpec.cs" />
+    <Compile Include="Specs\IPropertySpec.cs" />
+    <Compile Include="Is.cs" />
+    <Compile Include="Specs\IPropertyThatSpec.cs" />
+    <Compile Include="Specs\IResultSpec.cs" />
+    <Compile Include="Specs\IThatSpec.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReflectionExtensions.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

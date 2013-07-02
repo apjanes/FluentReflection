@@ -52,6 +52,12 @@ namespace FluentReflection.Tests
         }
 
         [Test]
+        public void GetValueShouldReturnTheCorrectValueWhenInstanceIsCastAsAnObject()
+        {
+            ((object)_testClass).Property("Dob").GetValue<DateTime>().Should().Be(new DateTime(1978, 03, 31));
+        }
+
+        [Test]
         public void SetValueShouldSetTheValueCorrectly()
         {
             var dateTime = new DateTime(2011,01,01);

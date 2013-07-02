@@ -33,6 +33,13 @@ namespace FluentReflection.Tests
         }
 
         [Test]
+        public void ItShouldInvokeInstancePrivateMethodWithoutParamsWhenInstanceIsCastAsAnObject()
+        {
+            var testClass = new TestClass("", "");
+            ((object)testClass).Method("MyClassName").Invoke<string>().Should().Be("MyTestClass");
+        }
+
+        [Test]
         public void ItShouldInvokeStaticVoidPublicMethodWithParams()
         {
             try

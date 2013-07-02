@@ -56,6 +56,12 @@ namespace FluentReflection.Tests
 
 
         [Test]
+        public void GetValueShouldReturnTheCorrectValueWhenInstanceIsCastAsAnObject()
+        {
+            ((object)_testClass).Field("_firstName").GetValue<string>().Should().Be("Aaron");
+        }
+
+        [Test]
         public void SetValueShouldSetTheValueCorrectly()
         {
             _testClass.Field("_firstName").SetValue("Caroline");

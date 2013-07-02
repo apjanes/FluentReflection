@@ -40,17 +40,17 @@ namespace FluentReflection
 
         public static IMethodSpec Method<T>(this T obj, string name)
         {
-            return new MethodSpec(typeof(T), name, obj);
+            return new MethodSpec(obj.GetType(), name, obj);
         }
 
         public static IFieldSpec Field<T>(this T obj, string name)
         {
-            return new FieldSpec(typeof(T), name, obj);
+            return new FieldSpec(obj.GetType(), name, obj);
         }
 
         public static IPropertySpec Property<T>(this T obj, string name)
         {
-            return new PropertySpec(typeof(T), name, obj);
+            return new PropertySpec(obj.GetType(), name, obj);
         }
 
         internal static bool HasFlag(this BindingFlags flags, BindingFlags toCheck)

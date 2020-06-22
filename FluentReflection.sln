@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentReflection", "src\FluentReflection.csproj", "{8E80D6B6-C83B-4A48-ADA0-0BAF1E95FEF5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B7400485-6400-45C5-9205-673ACD5301B1}"
@@ -8,6 +10,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CB42C3A8-BDDB-4327-9EA6-27CC5E451450}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentReflection.Tests", "tests\FluentReflection.Tests.csproj", "{4115DF47-CAD3-4F43-B3A1-C5130DBB62D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DCF0AC9E-9358-4DC2-B06D-DD14CD44D943}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+		version.txt = version.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +39,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8E80D6B6-C83B-4A48-ADA0-0BAF1E95FEF5} = {B7400485-6400-45C5-9205-673ACD5301B1}
 		{4115DF47-CAD3-4F43-B3A1-C5130DBB62D0} = {CB42C3A8-BDDB-4327-9EA6-27CC5E451450}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE1B1959-7ECD-49BF-AEF5-ACC18F0C49D2}
 	EndGlobalSection
 EndGlobal

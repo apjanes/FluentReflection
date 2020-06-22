@@ -1,18 +1,14 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("tests")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("tests")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2011")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
+[assembly: AssemblyTitle("Fluent Reflection: Tests")]
+[assembly: AssemblyDescription("Tests for the Fluent Reflection library")]
+[assembly: AssemblyCompany("Peppermint IT Limited")]
+[assembly: AssemblyProduct("Fluent Reflection: Tests")]
+[assembly: AssemblyCopyright("Copyright 2011-2020 by Peppermint IT Limited")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 

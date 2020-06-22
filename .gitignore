@@ -18,6 +18,7 @@ _ReSharper.*
 *.tmp
 *.Publish.xml
 *.nupkg
-*.nuspec
 _UpgradeReport*
 UpgradeLog.XML
+packages/
+node_modules/

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>FluentReflection</id>
+        <version>1.0.0.0</version>
+        <authors>Peppermint IT Limited</authors>
+        <owners>Peppermint IT Limited</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>.NET library for making reflection eminently easy through a usable, readable fluent interface.</description>
+        <releaseNotes></releaseNotes>
+        <copyright>Copyright 2011-2020 Peppermint IT Limited. All rights reserved.</copyright>
+		<dependencies>
+			<group targetFramework=".NETFramework3.5" />
+		</dependencies>
+    </metadata>
+    <files>
+		<file src="../bin/FluentReflection.dll"  target="lib/net35/FluentReflection.dll" />
+    </files>
+</package>

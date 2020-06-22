@@ -5,6 +5,7 @@ $rake_dir = File.join($base_dir, 'rake')
 $task_dir = File.join($rake_dir, 'tasks')
 $LOAD_PATH << $rake_dir
 require 'version'
+require 'date'
 
 # Configurable properties
 $solution = 'FluentReflection.sln'
@@ -13,7 +14,7 @@ $asm[:company] = 'Peppermint IT Limited'
 $asm[:product] = 'Fluent Reflection'
 $asm[:title] = $asm[:product]
 $asm[:description] = "Makes .NET reflection eminently easy through a usable, readable fluent interface."
-$asm[:copyright] = "Copyright 2011 by Peppermint IT Limited"
+$asm[:copyright] = "Copyright 2011-#{Date.today.year} by Peppermint IT Limited"
 $asm[:output] = File.join($base_dir, "src/Properties/AssemblyInfo.cs")
 $asm[:namespaces] = ['System.Runtime.CompilerServices']
 $asm[:custom_attributes] = {'InternalsVisibleTo'=>'FluentReflection.Tests'}

@@ -9,11 +9,13 @@
         <description>.NET library for making reflection eminently easy through a usable, readable fluent interface.</description>
         <releaseNotes></releaseNotes>
         <copyright>Copyright 2011-2020 Peppermint IT Limited. All rights reserved.</copyright>
+		<license type="file">LICENSE.md</license>
 		<dependencies>
 			<group targetFramework=".NETFramework3.5" />
 		</dependencies>
     </metadata>
     <files>
 		<file src="../bin/FluentReflection.dll"  target="lib/net35/FluentReflection.dll" />
+		<file src="../LICENSE.md" target="LICENSE.md" />
     </files>
 </package>
